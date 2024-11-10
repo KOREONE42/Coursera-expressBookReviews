@@ -4,7 +4,7 @@ let books = require("./booksdb.js");
 const regd_users = express.Router();
 
 let users = [
-  { id: 1, username: 'Amira', password: 'password1' },
+  { id: 1, username: 'kore', password: 'password1' },
   { id: 2, username: 'bob', password: 'password2' },
   { id: 3, username: 'charlie', password: 'password3' },
   { id: 4, username: 'david', password: 'password4' },
@@ -20,8 +20,6 @@ const isValid = (username, password)=>{
   return users.find(user => user.username === username && user.password === password);
 
 }
-
-
 
 const authenticatedUser = (username,password)=>{
    // check if the username exists in our records
